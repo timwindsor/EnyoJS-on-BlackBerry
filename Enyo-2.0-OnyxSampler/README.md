@@ -4,7 +4,7 @@ Enyo 2.0 Onyx Sampler Example
 This example shows how to build the Enyo 2.0 sample application Onyx Sampler as a BlackBerry WebWorks application.
 
 ## Enyo 2.0
-Enyo 2.0 is available from the EnyoJS organization on Github (https://github.com/enyojs/enyo), and from a zip: https://github.com/downloads/enyojs/enyo-1.0/enyo-1.0-r1.zip. Enyo 2.0 is released under the Apache 2.0 license.
+Enyo 2.0 is available from the EnyoJS organization on Github (https://github.com/enyojs/enyo), and from a zip: http://enyojs.com/#download. Enyo 2.0 is released under the Apache 2.0 license.
 
 Enyo 2.0 is based on the Enyo 1.0 framework but is designed to be a cross platform framework for all modern mobile and desktop browsers. Since BlackBerry 6, 7.x, PlayBook 1/2.x and BlackBerry 10 all have WebKit Browsers, and allow you to package web content into full applications, it's possible to port Enyo 2.0 applications to BlackBerry relatively quickly. 
 
