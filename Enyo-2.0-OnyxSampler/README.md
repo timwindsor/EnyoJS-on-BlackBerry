@@ -12,14 +12,12 @@ Enyo 2.0 is based on the Enyo 1.0 framework but is designed to be a cross platfo
 The Onyx Sampler application comes with the Onyx UI extension for Enyo 2.0 and is a showcase application with Onyx UI Samples. We will use this example as our starting point to build a WebWorks application for BlackBerry. Source for this can be viewed here: https://github.com/enyojs/onyx/tree/master/examples/OnyxSampler
 
 ## Building for BlackBerry
-The Onyx Sampler app refers to the enyo.js and enyo.css files in the zip, but we can separate out some of the extras that come with Enyo. We will follow steps like this:
+The Onyx Sampler app refers to the enyo.js and enyo.css files in the zip, and so we can skip updating the references in this case. In general we would follow steps like this:
 
 1. Download 2.0 from EnyoJS.com
 2. Create an /enyo dir and put enyo.js and enyo.css there
-3. Update your enyo references: 
-<link href='enyo/enyo.css' rel='stylesheet' type='text/css'>
-<script src='enyo/enyo.js'></script>
-4. Create a /lib folder and copy in what you need (Onyx in our case)
+3. Update your enyo references: <link href='enyo/enyo.css' rel='stylesheet' type='text/css'> and <script src='enyo/enyo.js'></script>
+4. Create a /lib folder and copy in what you need (Onyx and the other frameworks in this case)
 5. Create a config.xml file
 6. Zip your package
 7. Run the zip through the WebWorks Packager
