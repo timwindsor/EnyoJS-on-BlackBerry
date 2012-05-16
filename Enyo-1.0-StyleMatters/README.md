@@ -8,7 +8,7 @@ Enyo 1.0 is available from the EnyoJS organization on Github (https://github.com
 
 Enyo 1.0 was the development platform on the webOS devices and requires a WebKit based browser for rendering. Since BlackBerry 6, 7.x, PlayBook 1/2.x and BlackBerry 10 all have WebKit Browsers, and allow you to package web content into full applications, it's possible to port Enyo 1.0 applications to BlackBerry relatively quickly. 
 
-## Sytle Matters
+## Style Matters
 The Style Matters sample comes with Enyo 1.0, and is a showcase application with UI Samples and Enyo code. We will use this example as our starting point to build a WebWorks application for BlackBerry. Source for this can be viewed here: https://github.com/enyojs/enyo-1.0/tree/master/support/examples/StyleMatters
 
 ## Building for BlackBerry
@@ -45,11 +45,11 @@ See more documentation on the zip archive here: https://bdsc.webapps.blackberry.
 ### Package with WebWorks
 Depending on which platforms you are targetting, there are different packagers. Each takes the same archive content and creates a different application container in the appropriate SDK. The WebWorks packagers can be downloaded here: https://bdsc.webapps.blackberry.com/html5/download/sdk
 
-For BlackBerry Java Smartphones with OS 5, 6 or 7.x, the WebWorks packager makes a Java application. Details on packaging an application are here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Compile_WW_app_for_Smartphones_1873321_11.html
+For *BlackBerry Java Smartphones* with OS 5, 6 or 7.x, the WebWorks packager makes a Java application. Details on packaging an application are here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Compile_WW_app_for_Smartphones_1873321_11.html
 
-For BlackBerry PlayBook tablets with OS 1.0 and 2.x, the packager creates an AIR application. Details on packaging an application are here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Compile_WW_app_for_Tablets_1873322_11.html
+For *BlackBerry PlayBook tablets* with OS 1.0 and 2.x, the packager creates an AIR application. Details on packaging an application are here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Compile_WW_app_for_Tablets_1873322_11.html
 
-For BlackBerry devices running the BlackBerry 10 OS, the packager creates a native application in JavaScript and C/C++. Details on packaging an application are here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Package_your_BB10_app_with_WW_SDK_2008473_11.html
+For *BlackBerry 10 devices*, the packager creates a native application in JavaScript and C/C++. Details on packaging an application are here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Package_your_BB10_app_with_WW_SDK_2008473_11.html
 
 The basic WebWorks SDK supports command line packaging, but packaging is also supported through the [Ripple Emulator](https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Packaging_your_app_in_Ripple_1904611_11.html), and the [BlackBerry Graphical Aid](http://supportforums.blackberry.com/t5/Testing-and-Deployment/BlackBerry-Tablet-OS-Graphical-Aid/ta-p/1207067)
 
