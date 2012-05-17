@@ -16,7 +16,7 @@ The Onyx Sampler app refers to the enyo.js and enyo.css files in the zip, and so
 
 1. Download 2.0 from EnyoJS.com
 2. Create an /enyo dir and put enyo.js and enyo.css there
-3. Update your enyo references: <link href='enyo/enyo.css' rel='stylesheet' type='text/css'> and <script src='enyo/enyo.js'></script>
+3. Update your enyo references: &lt;link href='enyo/enyo.css' rel='stylesheet' type='text/css'&gt; and &lt;script src='enyo/enyo.js'&gt;&lt;/script&gt;
 4. Create a /lib folder and copy in what you need (Onyx and the other frameworks in this case)
 5. Create a config.xml file
 6. Zip your package
@@ -36,7 +36,7 @@ The details to set are as follows:
 See our documentation on creating a config.xml file here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Working_with_Config_XML_file_1866970_11.html
 
 ### Zip the package
-The zip file needs to follow a basic pattern: config.xml must be at the root of the zip, but other resources can be in folders. You just need to reference the content appropriately. Note how our config.xml file points into the file structure to get it's index page: <content src="/lib/onyx/examples/OnyxSampler/index.html"/>
+The zip file needs to follow a basic pattern: config.xml must be at the root of the zip, but other resources can be in folders. You just need to reference the content appropriately. Note how our config.xml file points into the file structure to get it's index page: &lt;content src="/lib/onyx/examples/OnyxSampler/index.html"/&gt;
 
 See more documentation on the zip archive here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Creating_an_archive_file_1873325_11.html
 

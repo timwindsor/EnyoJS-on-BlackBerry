@@ -13,12 +13,12 @@ The Style Matters sample comes with Enyo 1.0, and is a showcase application with
 
 ## Building for BlackBerry
 Enyo 1.0 was built into the webOS device so applications simply referred to the onboard location in their HTML like this: 
-<script src="../../../../1.0/framework/enyo.js" launch="debug" type="text/javascript"></script>
+&lt;script src="../../../../1.0/framework/enyo.js" launch="debug" type="text/javascript"&gt;&lt;/script&gt;
 When building for BlackBerry or another platform, you will need to obtain a copy of the framework to build into your application, and follow steps like this:
 
 1. Download 1.0 from EnyoJS.com
 2. Unpack the framework directory into your project
-3. Update your enyo.js reference: <script src="/framework/enyo.js" launch="debug" type="text/javascript"></script>
+3. Update your enyo.js reference: &lt;script src="/framework/enyo.js" launch="debug" type="text/javascript"&gt;&lt;/script&gt;
 4. Remove webOSconnect_1_3.jar from framework/build/palm/services/bridge and framework/source/palm/services/bridge
 5. Create a config.xml file
 6. Zip your package
