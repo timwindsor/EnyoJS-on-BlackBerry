@@ -43,7 +43,9 @@ The details to set are as follows:
 * Permissions for shared directory on file system
 
 > &lt;rim:permissions&gt;
-> &lt;rim:permit&gt;access_shared&lt;/rim:permit&gt;
+
+> 	&lt;rim:permit&gt;access_shared&lt;/rim:permit&gt;
+
 > &lt;/rim:permissions&gt;
 
 * Feature inclusions for WebWorks Extensions
