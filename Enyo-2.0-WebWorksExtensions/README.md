@@ -25,7 +25,9 @@ This application requires Enyo 2.0, and was built with the beta 3 version. This 
 package.js is the standard name of the dependency file for Enyo 2.0. This file was put in the /js folder and loads the Onyx library:
 
 > enyo.depends(
+
 >	"$lib/onyx"
+
 > );
 
 ### Creating a config.xml file
@@ -39,11 +41,15 @@ The details to set are as follows:
 * Can force a single orientation if necessary
 * Content points to our index.html
 * Permissions for shared directory on file system
-> 	<rim:permissions>
->		<rim:permit>access_shared</rim:permit>
->	</rim:permissions>
+
+> &lt;rim:permissions&gt;
+> &lt;rim:permit&gt;access_shared&lt;/rim:permit&gt;
+> &lt;/rim:permissions&gt;
+
 * Feature inclusions for WebWorks Extensions
-> <feature id="blackberry.app" required="true" version="1.0.0.0"/>
+
+> &lt;feature id="blackberry.app" required="true" version="1.0.0.0"/&gt;
+
 > ...
 
 See our documentation on creating a config.xml file here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Working_with_Config_XML_file_1866970_11.html
