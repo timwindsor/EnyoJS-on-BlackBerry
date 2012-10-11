@@ -4,7 +4,7 @@ Enyo 2.0 With BlackBerry 10 WebWorks
 This example shows how to build an application with Enyo 2.0 and include native functionality with BlackBerry WebWorks extensions. This sample will include responding to the battery status and accelerometer, and using the BlackBerry 10 Invocation Framework to choose a music file and play it. This sample requires the [BlackBerry 10 WebWorks SDK](https://developer.blackberry.com/html5/download/).
 
 ## Enyo 2.0
-Enyo 2.0 is available from the EnyoJS organization on Github (https://github.com/enyojs/enyo), and from a zip: http://enyojs.com/#download. Enyo 2.0 is released under the Apache 2.0 license.
+Enyo 2.0 is available from the EnyoJS organization on Github (https://github.com/enyojs/enyo). Enyo 2.0 is released under the Apache 2.0 license.
 
 Enyo 2.0 is based on the Enyo 1.0 framework but is designed to be a cross platform framework for all modern mobile and desktop browsers. Since BlackBerry 6, 7.x, PlayBook 1/2.x and BlackBerry 10 all have WebKit Browsers, and allow you to package web content into full applications, it's possible to port Enyo 2.0 applications to BlackBerry relatively quickly. 
 
@@ -34,42 +34,41 @@ The details to set are as follows:
 * Content points to our debug.html in this case
 * Permissions for shared directory on file system
 
-> &lt;rim:permissions&gt;
+    &lt;rim:permissions&gt;
 
-> 	&lt;rim:permit&gt;access_shared&lt;/rim:permit&gt;
+        &lt;rim:permit&gt;access_shared&lt;/rim:permit&gt;
 
-> &lt;/rim:permissions&gt;
+    &lt;/rim:permissions&gt;
 
 * Feature inclusions for WebWorks Extensions
 
-> &lt;feature id="blackberry.app"/&gt;
-
-> ...
+    &lt;feature id="blackberry.app"/&gt;
+    ...
 
 See our documentation on creating a config.xml file here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Working_with_Config_XML_file_1866970_11.html
 
 ### Write Enyo code with WebWorks Extensions
 In debug.html, I added the webworks-_version_.js file:
-> &lt;script src="js/webworks-1.0.2.9.js"&gt;&lt;/script&gt;
+    &lt;script src="js/webworks-1.0.2.9.js"&gt;&lt;/script&gt;
 
 With WebWorks, you need to wait for the file to be loaded before using any of the APIs, but you also want the Enyo code to run immediately. So, I separated the WebWorks and Enyo code from each other. The WebWorks code sits in the debug.html file, and makes calls into or gets called by the Enyo App.
 
 ie:
-> var a = new App();
-> a.renderInto(document.body);
-> ...
-> window.addEventListener("load", function(e) {
->		document.addEventListener("webworksready", function(e) {
->			a.header = blackberry.app.name;
->			blackberry.event.addEventListener("batterystatus", batteryUpdateCallback);
->			window.addEventListener('devicemotion', function(event) {
->				a.updateAccel(
->					event.accelerationIncludingGravity.x, 
->					event.accelerationIncludingGravity.y, 
->					event.accelerationIncludingGravity.z);
->			}, true);
->		}, false);
->	}, false);
+    var a = new App();
+    a.renderInto(document.body);
+    ...
+    window.addEventListener("load", function(e) {
+        document.addEventListener("webworksready", function(e) {
+        	a.header = blackberry.app.name;
+        	blackberry.event.addEventListener("batterystatus", batteryUpdateCallback);
+        	window.addEventListener('devicemotion', function(event) {
+        		a.updateAccel(
+        			event.accelerationIncludingGravity.x, 
+        			event.accelerationIncludingGravity.y, 
+        			event.accelerationIncludingGravity.z);
+        	}, true);
+        }, false);
+    }, false);
 
 ### Zip the package
 For simplicity with this sample, I'm not using the Enyo minifier script, just including everything and pointing the config.xml at debug.html instead of index.html
