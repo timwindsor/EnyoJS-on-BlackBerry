@@ -9,7 +9,7 @@ Enyo 2.0 is available from the EnyoJS organization on Github (https://github.com
 Enyo 2.0 is based on the Enyo 1.0 framework but is designed to be a cross platform framework for all modern mobile and desktop browsers. Since BlackBerry 6, 7.x, PlayBook 1/2.x and BlackBerry 10 all have WebKit Browsers, and allow you to package web content into full applications, it's possible to port Enyo 2.0 applications to BlackBerry relatively quickly. 
 
 ## Onyx Sampler
-The Onyx Sampler application comes with the Onyx UI extension for Enyo 2.0 and is a showcase application with Onyx UI Samples. We will use this example as our starting point to build a WebWorks application for BlackBerry. Source for this can be viewed here: https://github.com/enyojs/onyx/tree/master/examples/OnyxSampler
+The Onyx Sampler application comes with the Onyx UI extension for Enyo 2.0 and is a showcase application with Onyx UI Samples. We will use this example as our starting point to build a WebWorks application for BlackBerry. Source for this can be viewed here: https://github.com/timwindsor/EnyoJS-on-BlackBerry/tree/master/Enyo-2.0-OnyxSampler/lib/onyx/examples/OnyxSampler
 
 ## Building for BlackBerry
 The Onyx Sampler app refers to the enyo.js and enyo.css files in the zip, and so we can skip updating the references in this case. In general we would follow steps like this:
