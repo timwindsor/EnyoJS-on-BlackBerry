@@ -34,26 +34,28 @@ The details to set are as follows:
 * Content points to our debug.html in this case
 * Permissions for shared directory on file system
 
-    &lt;rim:permissions&gt;
+> &lt;rim:permissions&gt;
 
-        &lt;rim:permit&gt;access_shared&lt;/rim:permit&gt;
+> 	&lt;rim:permit&gt;access_shared&lt;/rim:permit&gt;
 
-    &lt;/rim:permissions&gt;
+> &lt;/rim:permissions&gt;
 
 * Feature inclusions for WebWorks Extensions
 
-    &lt;feature id="blackberry.app"/&gt;
-    ...
+> &lt;feature id="blackberry.app"/&gt;
+
+> ...
 
 See our documentation on creating a config.xml file here: https://bdsc.webapps.blackberry.com/html5/documentation/ww_developing/Working_with_Config_XML_file_1866970_11.html
 
 ### Write Enyo code with WebWorks Extensions
 In debug.html, I added the webworks-_version_.js file:
-    &lt;script src="js/webworks-1.0.2.9.js"&gt;&lt;/script&gt;
+> &lt;script src="js/webworks-1.0.2.9.js"&gt;&lt;/script&gt;
 
 With WebWorks, you need to wait for the file to be loaded before using any of the APIs, but you also want the Enyo code to run immediately. So, I separated the WebWorks and Enyo code from each other. The WebWorks code sits in the debug.html file, and makes calls into or gets called by the Enyo App.
 
 ie:
+
     var a = new App();
     a.renderInto(document.body);
     ...
