@@ -1,3 +1,5 @@
+# Presentation (pdf) and Sample Video are included in this directory, and should be removed before building into an app :)
+
 Enyo 2.0 With BlackBerry 10 WebWorks
 ====================================
 
